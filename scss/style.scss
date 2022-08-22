@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans';
+    background-color: #FFF1F8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+
+@import './fonts.scss';
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+@import './media.scss';

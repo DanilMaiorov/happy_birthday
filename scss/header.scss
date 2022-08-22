@@ -1,0 +1,53 @@
+.header {
+    padding: 28px 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px rgba(72, 3, 38, 0.07);
+    position: relative;
+    z-index: 1;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__button-change {
+    width: 300px;
+    height: 65px;
+    background: #C300C7;
+    border-radius: 30px;
+    border: none;
+    margin-right: 30px;
+}
+.header__button-change:last-child {
+    margin-right: 0;
+}
+.header__button-change_text {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.header__button-gender {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    background-size: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.header__button-gender:last-child {
+    margin-right: 0px;
+}
+
+.header__button-change_male {
+    background-image: url('../img/ri_men-line.svg');
+    //border: 1px solid #C300C7;
+}
+.header__button-change_female {
+    background-image: url('../img/ri_women-line.svg');
+    //border: 1px solid #C300C7;
+}

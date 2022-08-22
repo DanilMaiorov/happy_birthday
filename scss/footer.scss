@@ -1,0 +1,21 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text-wrapper {
+    font-size: 16px;
+}
+.footer__text-item {
+    margin-bottom: 8px;
+}
+.footer__text-item:last-child {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.footer__social-link {
+    margin-left: 16px;
+}
+.footer__social-link:first-child {
+    margin-left: 0px;
+}
