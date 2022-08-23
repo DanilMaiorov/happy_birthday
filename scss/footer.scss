@@ -19,3 +19,9 @@
 .footer__social-link:first-child {
     margin-left: 0px;
 }
+.men .footer__social-link svg path {
+        fill: #1178B2;
+}
+.woman .footer__social-link svg path {
+    fill: #C300C7;
+}

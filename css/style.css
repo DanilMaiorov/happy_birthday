@@ -30,10 +30,16 @@ button {
 a {
   text-decoration: none; }
 
+.men {
+  background-color: #EFF9FE; }
+
+.woman {
+  background-color: #FFF1F8; }
+
 @font-face {
   font-family: 'Bad Script';
   font-weight: 400;
-  src: url("../fonts/bad-script-v16-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/bad-script-v16-latin_cyrillic-regular.woff2") format("woff"); }
+  src: url("../fonts/bad-script-v16-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/bad-script-v16-latin_cyrillic-regular.woff") format("woff"); }
 @font-face {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -62,6 +68,12 @@ a {
   border: none;
   margin-right: 30px; }
 
+.men .header__button-change {
+  background: #1178B2; }
+
+.woman .header__button-change {
+  background: #C300C7; }
+
 .header__button-change:last-child {
   margin-right: 0; }
 
@@ -89,8 +101,14 @@ a {
 .header__button-change_male {
   background-image: url("../img/ri_men-line.svg"); }
 
+.men .header__button-change_male {
+  border-color: #1178B2; }
+
 .header__button-change_female {
   background-image: url("../img/ri_women-line.svg"); }
+
+.woman .header__button-change_female {
+  border: 1px solid #C300C7; }
 
 .card {
   flex-grow: 1;
@@ -108,11 +126,19 @@ a {
   box-shadow: 0px 0px 50px rgba(96, 4, 50, 0.23);
   font-size: 18px; }
 
+.woman .card__text {
+  font-family: 'Bad Script'; }
+
+.men .card__text {
+  font-family: 'Open sans';
+  font-weight: 700; }
+
 .card__text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  line-height: 130%; }
 
 .footer__container {
   display: flex;
@@ -134,6 +160,12 @@ a {
 
 .footer__social-link:first-child {
   margin-left: 0px; }
+
+.men .footer__social-link svg path {
+  fill: #1178B2; }
+
+.woman .footer__social-link svg path {
+  fill: #C300C7; }
 
 @media (max-width: 880px) {
   .container {
@@ -160,9 +192,25 @@ a {
     font-size: 16px; } }
 @media (max-width: 660px) {
   .card__wrapper {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .card {
+    flex-grow: 0; } }
 @media (max-width: 492px) {
   .card__wrapper {
+    font-size: 10px; }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 20px; }
+
+  .footer__text-wrapper {
+    margin-right: auto; }
+
+  .footer__text-item {
+    font-size: 12px; }
+
+  .footer__text-item:last-child {
     font-size: 10px; } }
 @media (max-width: 375px) {
   .card__wrapper {

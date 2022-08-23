@@ -18,6 +18,13 @@
     border: none;
     margin-right: 30px;
 }
+.men .header__button-change {
+    background: #1178B2;
+}
+.woman .header__button-change {
+    background: #C300C7;
+}
+
 .header__button-change:last-child {
     margin-right: 0;
 }
@@ -42,12 +49,15 @@
 .header__button-gender:last-child {
     margin-right: 0px;
 }
-
 .header__button-change_male {
     background-image: url('../img/ri_men-line.svg');
-    //border: 1px solid #C300C7;
+}
+.men .header__button-change_male {
+    border-color: #1178B2;
 }
 .header__button-change_female {
     background-image: url('../img/ri_women-line.svg');
-    //border: 1px solid #C300C7;
+}
+.woman .header__button-change_female {
+    border: 1px solid #C300C7;
 }

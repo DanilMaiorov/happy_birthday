@@ -27,9 +27,27 @@
     .card__wrapper {
         font-size: 14px;
     }
+    .card {
+        flex-grow: 0;
+    }
 }
 @media (max-width: 492px) {
     .card__wrapper {
+        font-size: 10px;
+    }
+    .footer__container {
+        flex-direction: column-reverse;
+        gap: 20px;
+        
+    }
+    .footer__text-wrapper {
+        margin-right: auto;
+        
+    }
+    .footer__text-item {
+        font-size: 12px;
+    }    
+    .footer__text-item:last-child {
         font-size: 10px;
     }
 }

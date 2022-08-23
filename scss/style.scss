@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Open Sans';
     background-color: #FFF1F8;
@@ -35,7 +34,12 @@ button {
 a {
     text-decoration: none;
 }
-
+.men {
+    background-color: #EFF9FE;
+}
+.woman {
+    background-color: #FFF1F8;
+}
 
 @import './fonts.scss';
 @import './header.scss';

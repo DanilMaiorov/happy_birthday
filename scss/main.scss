@@ -15,10 +15,18 @@
     //font-size: 3px;
     font-size: 18px;
 }
+.woman .card__text {
+    font-family: 'Bad Script';
+}
+.men .card__text {
+    font-family: 'Open sans';
+    font-weight: 700;
+}
 .card__text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 130%;
     //font-size: max(3em, min(calc(100vw * 3 / (840 / 3 / 2)), 6em));
 }
