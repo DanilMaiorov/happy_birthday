@@ -213,9 +213,6 @@ a {
     flex-direction: column-reverse;
     gap: 20px; }
 
-  .footer__text-wrapper {
-    margin-right: auto; }
-
   .footer__text-item {
     font-size: 12px; }
 
