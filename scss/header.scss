@@ -64,13 +64,12 @@
     border: 1px solid #C300C7;
 }
 
-.header__button-change_text-prev {
-width: 150px;
-font-size: 14px;
-color: #fff;    
-}
+.header__button-change_text-prev,
 .header__button-change_image-prev {
+    display: none;
     width: 150px;
     font-size: 14px;
     color: #fff;    
+    vertical-align: middle;
+    transition: 0.4s;
 }

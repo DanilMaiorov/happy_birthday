@@ -26,8 +26,24 @@
 @media (min-width: 768px) {
     .header__button-change_text:hover,
     .header__button-change_image:hover,
+    .header__button-change_text-prev:hover,
+    .header__button-change_image-prev:hover,
     .footer__social-link:hover {
         opacity: 0.8;
+    }
+    .header__button-change_text:focus,
+    .header__button-change_image:focus,
+    .header__button-change_text-prev:focus,
+    .header__button-change_image-prev:focus,
+    .footer__social-link svg:focus {
+        border: 2px solid rgb(114, 112, 112);
+    }
+    .header__button-change_text:active,
+    .header__button-change_image:active,
+    .header__button-change_text-prev:active,
+    .header__button-change_image-prev:active,
+    .footer__social-link svg:active {
+        transform: scale(1.05);
     }
 }
 @media (max-width: 660px) {

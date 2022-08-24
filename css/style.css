@@ -112,15 +112,14 @@ a {
 .woman .header__button-change_female {
   border: 1px solid #C300C7; }
 
-.header__button-change_text-prev {
-  width: 150px;
-  font-size: 14px;
-  color: #fff; }
-
+.header__button-change_text-prev,
 .header__button-change_image-prev {
+  display: none;
   width: 150px;
   font-size: 14px;
-  color: #fff; }
+  color: #fff;
+  vertical-align: middle;
+  transition: 0.4s; }
 
 .card {
   flex-grow: 1;
@@ -170,10 +169,15 @@ a {
 
 .footer__social-link {
   margin-left: 16px;
-  transition: 0.4s; }
+  transition: all 0.4s; }
 
 .footer__social-link:first-child {
   margin-left: 0px; }
+
+.footer__social-link svg {
+  transition: all 0.4s;
+  border-radius: 50%;
+  overflow: hidden; }
 
 .men .footer__social-link svg path {
   fill: #1178B2; }
@@ -207,8 +211,24 @@ a {
 @media (min-width: 768px) {
   .header__button-change_text:hover,
   .header__button-change_image:hover,
+  .header__button-change_text-prev:hover,
+  .header__button-change_image-prev:hover,
   .footer__social-link:hover {
-    opacity: 0.8; } }
+    opacity: 0.8; }
+
+  .header__button-change_text:focus,
+  .header__button-change_image:focus,
+  .header__button-change_text-prev:focus,
+  .header__button-change_image-prev:focus,
+  .footer__social-link svg:focus {
+    border: 2px solid #727070; }
+
+  .header__button-change_text:active,
+  .header__button-change_image:active,
+  .header__button-change_text-prev:active,
+  .header__button-change_image-prev:active,
+  .footer__social-link svg:active {
+    transform: scale(1.05); } }
 @media (max-width: 660px) {
   .card__wrapper {
     font-size: 14px; }
