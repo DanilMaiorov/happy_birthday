@@ -77,11 +77,13 @@ a {
 .header__button-change:last-child {
   margin-right: 0; }
 
-.header__button-change_text {
+.header__button-change_text,
+.header__button-change_image {
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 18px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: 0.4s; }
 
 .header__button-gender {
   width: 60px;
@@ -124,7 +126,8 @@ a {
   margin: auto;
   display: flex;
   box-shadow: 0px 0px 50px rgba(96, 4, 50, 0.23);
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 5; }
 
 .woman .card__text {
   font-family: 'Bad Script'; }
@@ -156,7 +159,8 @@ a {
   margin-bottom: 0px; }
 
 .footer__social-link {
-  margin-left: 16px; }
+  margin-left: 16px;
+  transition: 0.4s; }
 
 .footer__social-link:first-child {
   margin-left: 0px; }
@@ -190,6 +194,11 @@ a {
 
   .card__wrapper {
     font-size: 16px; } }
+@media (min-width: 768px) {
+  .header__button-change_text:hover,
+  .header__button-change_image:hover,
+  .footer__social-link:hover {
+    opacity: 0.8; } }
 @media (max-width: 660px) {
   .card__wrapper {
     font-size: 14px; }

@@ -23,6 +23,13 @@
         font-size: 16px;
     }
 }
+@media (min-width: 768px) {
+    .header__button-change_text:hover,
+    .header__button-change_image:hover,
+    .footer__social-link:hover {
+        opacity: 0.8;
+    }
+}
 @media (max-width: 660px) {
     .card__wrapper {
         font-size: 14px;

@@ -28,11 +28,13 @@
 .header__button-change:last-child {
     margin-right: 0;
 }
-.header__button-change_text {
+.header__button-change_text,
+.header__button-change_image {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 18px;
     color: #FFFFFF;
+    transition: 0.4s;
 }
 .header__button-gender {
     width: 60px;
