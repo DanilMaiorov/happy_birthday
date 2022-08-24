@@ -6,9 +6,10 @@ const prevTextCard = document.querySelector('.header__button-change_text-prev');
 const prevImgCard = document.querySelector('.header__button-change_image-prev');
 const wrapper = document.querySelector('.card__wrapper');
 const cardContainer = document.querySelector('.card__container');
-
-
-
+let arrCardPrev = [];
+let arrImgPrev = [];
+let countText = 0;
+let countImg = 0;
 const state = {
     gender: body.classList.contains('woman') ? 'woman' : 'men',
 };
@@ -17,6 +18,10 @@ const changeToMen = () => {
         body.classList.add('men');
         body.classList.remove('woman');
         state.gender = 'men';
+        arrCardPrev = [state];
+        arrImgPrev = [state];
+        countImg = 0;
+        countText = 0;
         getDataToCard();
     }
 };
@@ -25,6 +30,10 @@ const changeTowoman = () => {
         body.classList.add('woman');
         body.classList.remove('men');
         state.gender = 'woman';
+        arrCardPrev = [state];
+        arrImgPrev = [state];
+        countImg = 0;
+        countText = 0;
         getDataToCard();
     }
 };
@@ -88,10 +97,8 @@ const changePrevText = (arr) => {
 };
 const changePrevImage = (arr) => {
     arr.forEach(item => {
-        console.log(item);
         state.photo = item.photo;
         cardImage.src = `./img/${state.photo}`;
-        console.log(state.photo);
         renderDOM();
                 setTimeout(() => {
             screenShot();
@@ -114,9 +121,6 @@ class Obj {
         this.photo = photo;
     }
 }
-let arrCardPrev = [state];
-let arrImgPrev = [state];
-
 const prevCard = () => {
     let newCard = new Obj(state.gender, state.text, state.photo);
     arrCardPrev.push(newCard);
@@ -127,10 +131,6 @@ const prevImg = () => {
     arrImgPrev.push(newImg);
     return arrImgPrev;
 };
-
-let countText = 0;
-let countImg = 0;
-
 header.addEventListener('click', (e) => {
     if(e.target.classList.contains('header__button-change_male')) {
         changeToMen();
@@ -151,14 +151,14 @@ header.addEventListener('click', (e) => {
     if(e.target == prevTextCard) {
         if(arrCardPrev.length >= 2) {
             changePrevText(arrCardPrev.slice(-1));
-            countText = 0;
         }
+        countText = 0;
     }
     if(e.target == prevImgCard) {
         if(arrImgPrev.length >= 2) {
             changePrevImage(arrImgPrev.slice(-1));
-            countImg = 0;
         }
+        countImg = 0;
     }
     if(countText === 1) {
         prevTextCard.style.display = 'inline';
