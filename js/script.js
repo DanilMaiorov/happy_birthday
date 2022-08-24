@@ -92,7 +92,13 @@ const changePhoto = () => {
             }, 1);
     });
 };
-
+const prevTexts = [];
+const changePrevText = (arr) => {
+    console.log('asd');
+    arr.forEach((item, index) => {
+        console.log(item);
+    })
+};
 header.addEventListener('click', (e) => {
     if(e.target.classList.contains('header__button-change_male')) {
         changeToMen();
@@ -102,11 +108,20 @@ header.addEventListener('click', (e) => {
     }
     if(e.target.classList.contains('header__button-change_text')) {
         changeText();
-
     }
     if(e.target.classList.contains('header__button-change_image')) {
         changePhoto();
     }
+    const prevText = Object.assign(state);
+    console.log(state);
+    console.log(prevTexts);
+    prevTexts.push(prevText);
+    console.log(prevTexts);
+    if(e.target.classList.contains('header__button-change_text-prev')) {
+
+        
+    }
+
 });
 getDataToCard();
 
