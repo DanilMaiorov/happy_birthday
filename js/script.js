@@ -5,10 +5,7 @@ const cardImage = document.querySelector('.card__image');
 const cardText = document.querySelector('.card__text');
 
 const wrapper = document.querySelector('.card__wrapper');
-wrapper.style.display = 'none';
-    setTimeout(() => {
-        wrapper.style.display = 'flex';
-    }, 200);
+
 const cardContainer = document.querySelector('.card__container');
 
 const state = {
